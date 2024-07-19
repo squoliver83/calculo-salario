@@ -22,7 +22,8 @@ public class CalculoSalarios {
     }
 
     private static void calcularEimprimirRelatorio(double[] salarios) {
-        System.out.println("# RELATÓRIO DE PAGAMENTOS E DESCONTOS #");
+        System.out.println("\n# RELATÓRIO DE PAGAMENTOS E DESCONTOS #\n");
+
         for (int i = 0; i < salarios.length; i++) {
             double descontoINSS = calculaDescontoINSS(salarios[i]);
             double descontoIR = calculaDescontoIR(salarios[i]);
